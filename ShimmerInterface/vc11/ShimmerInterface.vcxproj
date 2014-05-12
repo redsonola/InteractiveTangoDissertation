@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F981628B-5A43-49CF-9770-1850F0697CBD}</ProjectGuid>
+    <RootNamespace>ShimmerInterface</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\boost";..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Courtney Brown\Downloads\Cinder-boost_155\Cinder-boost_155\lib;C:\Users\Courtney Brown\Downloads\boost_1_55_0\boost_1_55_0;C:\Users\Courtney Brown\Downloads\Cinder-boost_155\Cinder-boost_155\lib\msw\x86;C:\Users\Courtney Brown\Downloads\Cinder-boost_155\Cinder-boost_155\lib\msw\x64;C:\Users\Courtney Brown\Downloads\Cinder-boost_155\Cinder-boost_155\lib\msw</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Courtney Brown\Documents\Visual Studio 2013\ShimmerInterface\vc11\;C:\Program Files\MATLAB\R2014a\extern\include;..\include;C:\Users\Courtney Brown\Downloads\Cinder-dev\Cinder-dev\include;C:\Users\Courtney Brown\Downloads\boost_1_55_0\boost_1_55_0;..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;libeng.lib;libmx.lib;libmex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\MATLAB\R2014a\extern\lib\win64\microsoft;C:\Users\Courtney Brown\Downloads\boost_1_55_0\boost_1_55_0\bin.v2\libs\regex\build\msvc-12.0\debug\address-model-64\architecture-x86\link-static\runtime-link-static\threading-multi;C:\Users\Courtney Brown\Downloads\Cinder-boost_155\Cinder-boost_155\lib\msw\x64;C:\Users\Courtney Brown\Downloads\Cinder-dev\Cinder-dev\lib\msw\x64</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+      <HeapCommitSize>1073741823</HeapCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\boost";..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\lib";"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\boost";..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\lib";"..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ShimmerInterfaceApp.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscBundle.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscListener.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscMessage.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscSender.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\win32\UdpSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscArg.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscBundle.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscListener.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscMessage.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\OscSender.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\PacketListener.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\TimerListener.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscException.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\..\..\Downloads\cinder_0.8.5_vc2012\cinder_0.8.5_vc2012\blocks\OSC\src\osc\OscTypes.h" />
+    <ClInclude Include="ShimmerWrapper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
